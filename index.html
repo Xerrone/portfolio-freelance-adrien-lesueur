@@ -146,18 +146,18 @@
         },
         {
           "@type": "Question",
-          "name": "Comment se passe la facturation d'une mission Zoho One ?",
+          "name": "Travaillez-vous uniquement au forfait ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Missions au forfait, avec un devis détaillé après l'appel découverte. Paiement en 2 ou 3 fois selon la durée (lancement / mi-parcours / livraison). Support récurrent facturable au mois."
+            "text": "Non. La majorité des missions se fait en mode itératif et évolutif (régie). Le forfait existe pour les périmètres bien définis en amont. On détermine ensemble ce qui correspond le mieux à votre situation."
           }
         },
         {
           "@type": "Question",
-          "name": "Que se passe-t-il après la mise en production de Zoho One ?",
+          "name": "Peut-on commencer progressivement avec Zoho One ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Un suivi 30/60/90 jours est inclus sur chaque mission : ajustements, formation complémentaire, corrections. Au-delà, un forfait de support mensuel est disponible pour les équipes qui veulent garder un expert sous la main."
+            "text": "Oui. Il est possible de démarrer avec un périmètre réduit — par exemple, un seul pipeline CRM ou une automatisation clé — puis d'élargir progressivement au fil des besoins et des résultats observés."
           }
         },
         {
@@ -524,6 +524,45 @@
   .pkg li svg{width:16px;height:16px;color:var(--accent);flex-shrink:0;margin-top:2px}
   .pkg .btn{justify-content:center;align-self:flex-start}
 
+  /* ——— pricing modes ——— */
+  .modes-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
+  @media(max-width:640px){.modes-grid{grid-template-columns:1fr}}
+  .mode-card{background:#fff;border:1px solid var(--line-strong);border-radius:16px;padding:26px;position:relative;box-shadow:0 1px 3px rgba(0,0,0,0.06);display:flex;flex-direction:column;gap:14px}
+  .mode-card.featured{border-color:rgba(14,165,233,.4);background:linear-gradient(180deg,#f0f9ff,#fff);box-shadow:0 8px 24px rgba(14,165,233,.12)}
+  .mode-tag{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;width:fit-content}
+  .mode-card.featured .mode-tag{background:linear-gradient(180deg,#0ea5e9,#0369a1);color:#fff}
+  .mode-card:not(.featured) .mode-tag{background:var(--navy-850);color:var(--ink-300);border:1px solid var(--line-strong)}
+  .mode-card h4{font-size:20px;color:var(--ink-50);letter-spacing:-.015em;margin:0}
+  .mode-card .mode-desc{font-size:13.5px;color:var(--ink-300);line-height:1.55;margin:0}
+  .mode-card ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px}
+  .mode-card li{font-size:13px;color:var(--ink-100);display:flex;gap:8px;align-items:flex-start}
+  .mode-card li svg{width:14px;height:14px;color:var(--accent);flex-shrink:0;margin-top:3px}
+
+  /* ——— AI section ——— */
+  .ai-top{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+  @media(max-width:720px){.ai-top{grid-template-columns:1fr}}
+  .ai-zia{background:linear-gradient(180deg,#0f172a 0%,#0c1a2e 100%);border:1px solid rgba(14,165,233,.25);border-radius:18px;padding:28px;position:relative;overflow:hidden}
+  .ai-zia:before{content:"";position:absolute;top:-80px;right:-80px;width:260px;height:260px;background:radial-gradient(circle,rgba(14,165,233,0.18),transparent 70%);pointer-events:none}
+  .ai-zia-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#7dd3fc;margin-bottom:14px}
+  .ai-zia-badge .dot-ai{width:8px;height:8px;border-radius:50%;background:#22d3ee;box-shadow:0 0 8px rgba(34,211,238,.7)}
+  .ai-zia h4{font-size:22px;color:#f1f5f9;letter-spacing:-.015em;margin:0 0 10px}
+  .ai-zia p{font-size:14px;color:#94a3b8;line-height:1.6;margin:0 0 16px}
+  .ai-chips{display:flex;flex-wrap:wrap;gap:6px}
+  .ai-chip{font-family:var(--mono);font-size:10.5px;padding:5px 10px;border-radius:7px;background:rgba(14,165,233,0.1);border:1px solid rgba(14,165,233,.25);color:#7dd3fc;letter-spacing:.02em}
+  .ai-examples{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border:1px solid rgba(14,165,233,.2);border-radius:18px;padding:28px}
+  .ai-examples .ex-label{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-deep);margin-bottom:16px}
+  .ai-examples ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
+  .ai-examples li{font-size:14px;color:var(--ink-200);display:flex;gap:12px;align-items:flex-start;line-height:1.55;padding:12px 14px;background:#fff;border:1px solid rgba(14,165,233,.12);border-radius:10px}
+  .ai-examples li svg{width:16px;height:16px;color:var(--accent);flex-shrink:0;margin-top:2px}
+  .ai-feats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px}
+  @media(max-width:960px){.ai-feats{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.ai-feats{grid-template-columns:1fr}}
+  .ai-feat{background:#fff;border:1px solid var(--line-strong);border-radius:14px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+  .ai-feat .feat-ic{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,#0ea5e9,#0369a1);display:grid;place-items:center;color:#fff;margin-bottom:12px}
+  .ai-feat .feat-ic svg{width:16px;height:16px}
+  .ai-feat h5{font-size:14px;color:var(--ink-50);letter-spacing:-.01em;margin:0 0 6px}
+  .ai-feat p{font-size:12.5px;color:var(--ink-300);line-height:1.5;margin:0}
+
   /* ——— testimonials ——— */
   .quote-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:18px}
   @media (max-width:960px){ .quote-grid{grid-template-columns:1fr} }
@@ -728,7 +767,7 @@ const CLIENTS = [
 /* ---------- i18n ---------- */
 const I18N = {
   fr: {
-    nav: { services:"Services", process:"Méthode", stack:"Outils", work:"Réalisations", pricing:"Forfaits", faq:"FAQ", cta:"Réserver un appel" },
+    nav: { services:"Services", process:"Méthode", stack:"Outils", ai:"IA & Zoho", work:"Réalisations", pricing:"Collaboration", faq:"FAQ", cta:"Réserver un appel" },
     hero: {
       eyebrow: "Freelance Zoho One · Basé en France",
       posture: { a:"Freelance Zoho One", b:"pour structurer, automatiser", c:"et fiabiliser votre back-office." },
@@ -1022,40 +1061,64 @@ const I18N = {
       ]
     },
     pricing: {
-      eyebrow: "Forfait",
-      h2: "Un seul forfait, tout ce que je sais faire.",
-      sub: "Devis personnalisé après l'appel découverte — chaque mission est cadrée selon votre périmètre et votre contexte.",
+      eyebrow: "Collaboration",
+      h2: "Deux façons de travailler ensemble.",
+      sub: "Je m'adapte à votre contexte — projet défini ou collaboration continue. La flexibilité est au cœur de chaque mission.",
       tjm: "550 €",
       tjmUnit: "/ jour HT",
-      tjmNote: "Taux journalier moyen · les forfaits sont cadrés après appel",
+      tjmNote: "Taux journalier · devis personnalisé après appel découverte",
       priceLabel: "Sur devis · cadré après l'appel découverte",
-      items: [
+      modes: [
         {
-          t:"Ce que je fais",
-          sub:"De l'audit initial à la formation des équipes — tout ce que nécessite un déploiement Zoho réussi.",
-          feats:[
-            "Audit & diagnostic Zoho (existant ou from scratch)",
-            "Implémentation Zoho CRM — pipelines, étapes, champs, rôles",
-            "Import & nettoyage des données existantes",
-            "Déploiement Zoho One complet (45+ apps interconnectées)",
-            "Intégrations inter-apps (CRM, Books, Forms, Sign, Campaigns…)",
-            "Automatisations Zoho Flow, Blueprints, scripts Deluge",
-            "Connexions outils tiers (Stripe, Twilio, Google, Calendly, Jira…)",
-            "Zoho Books — facturation & gestion financière automatisée",
-            "Zoho Campaigns — marketing automation & e-mails",
-            "Zoho Analytics — tableaux de bord KPI & reporting",
-            "Zoho Sign — signature électronique & gestion des contrats",
-            "Zoho WorkDrive — gestion documentaire & partage",
-            "Zoho Forms — capture et qualification des leads",
-            "Formation admins & utilisateurs par rôle",
-            "Documentation vivante & guides d'exploitation",
-            "Suivi post-lancement 30 / 60 / 90 jours inclus",
-            "Support récurrent mensuel (en option)",
-            "Reprise & optimisation de déploiements existants"
-          ],
-          cta:"Réserver un appel découverte"
+          featured: true,
+          tag: "★ Modèle principal",
+          t: "Régie",
+          sub: "La majorité de mes missions se font en mode itératif. Vous bénéficiez d'une flexibilité totale : on avance au rythme du projet, on ajuste en cours de route, on s'inscrit dans la durée si besoin.",
+          points: [
+            "Facturation à la journée ou au mois",
+            "Ajustements en temps réel selon les priorités",
+            "Idéal pour les projets qui évoluent dans le temps",
+            "Optimisations continues post-lancement",
+            "Collaboration long terme avec interlocuteur unique"
+          ]
+        },
+        {
+          featured: false,
+          tag: "Périmètre défini",
+          t: "Forfait",
+          sub: "Pour les missions à cadre bien défini : mise en place initiale d'un CRM, audit ou mission spécifique. Devis clair, livraison encadrée, paiement en 2 ou 3 fois.",
+          points: [
+            "Devis détaillé après appel découverte",
+            "Périmètre, livrables et délais fixés en amont",
+            "Exemple : implémentation CRM from scratch",
+            "Exemple : audit & plan d'évolution d'un déploiement existant",
+            "Paiement en 2 ou 3 fois selon la durée"
+          ]
         }
-      ]
+      ],
+      featsLabel: "Ce que je peux réaliser",
+      featsSub: "De l'audit initial à la formation des équipes — tout ce que nécessite un déploiement Zoho réussi.",
+      feats: [
+        "Audit & diagnostic Zoho (existant ou from scratch)",
+        "Implémentation Zoho CRM — pipelines, étapes, champs, rôles",
+        "Import & nettoyage des données existantes",
+        "Déploiement Zoho One complet (45+ apps interconnectées)",
+        "Intégrations inter-apps (CRM, Books, Forms, Sign, Campaigns…)",
+        "Automatisations Zoho Flow, Blueprints, scripts Deluge",
+        "Connexions outils tiers (Stripe, Twilio, Google, Calendly, Jira…)",
+        "Zoho Books — facturation & gestion financière automatisée",
+        "Zoho Campaigns — marketing automation & e-mails",
+        "Zoho Analytics — tableaux de bord KPI & reporting",
+        "Zoho Sign — signature électronique & gestion des contrats",
+        "Zoho WorkDrive — gestion documentaire & partage",
+        "Zoho Forms — capture et qualification des leads",
+        "Formation admins & utilisateurs par rôle",
+        "Documentation vivante & guides d'exploitation",
+        "Support récurrent mensuel (en option)",
+        "Reprise & optimisation de déploiements existants",
+        "Intégration IA Zoho Zia — scoring leads, prévisions, automatisations"
+      ],
+      cta: "Réserver un appel découverte"
     },
     quotes: {
       eyebrow: "Témoignages",
@@ -1079,12 +1142,38 @@ const I18N = {
       eyebrow: "FAQ",
       h2: "Les questions qui reviennent le plus.",
       items: [
-        { q:"Combien de temps prend un déploiement Zoho One ?", a:"Entre 3 et 8 semaines selon le périmètre. Un déploiement CRM seul tient en 2 à 3 semaines ; une suite complète avec automatisations et migrations demande 6 à 10 semaines. Chaque étape est planifiée et validée avec vous." },
+        { q:"Combien de temps dure un projet ?", a:"Cela dépend du périmètre, des besoins métier et du niveau de personnalisation. Certains projets durent quelques semaines — d'autres s'inscrivent dans une collaboration continue sur plusieurs mois. Je m'adapte à votre rythme." },
+        { q:"Travaillez-vous uniquement au forfait ?", a:"Non. La majorité de mes missions se fait en mode itératif et évolutif (régie). Le forfait existe pour les périmètres bien définis en amont, mais ce n'est pas le modèle par défaut. On détermine ensemble ce qui correspond le mieux à votre situation." },
+        { q:"Peut-on commencer progressivement ?", a:"Oui, tout à fait. Il est possible de démarrer avec un périmètre réduit — par exemple, un seul pipeline CRM ou une automatisation clé — puis d'élargir progressivement au fil des besoins et des résultats observés." },
         { q:"Faut-il déjà avoir une licence Zoho One ?", a:"Non. Je vous accompagne dans le choix de la bonne offre (Zoho One, CRM Plus, apps à la carte) selon votre taille et vos besoins réels, avant tout engagement côté licences." },
+        { q:"Combien de temps prend un déploiement Zoho One ?", a:"Un déploiement CRM seul tient généralement en 2 à 3 semaines. Une suite complète avec automatisations et migrations demande 6 à 10 semaines. Mais la durée réelle dépend de la complexité de vos processus métier et du niveau d'implication de votre équipe." },
         { q:"Travaillez-vous uniquement en France ?", a:"Je travaille avec des clients francophones — France, Suisse, Belgique, Luxembourg, Canada. Les missions se font à distance, avec des points en visio et, si besoin, quelques journées sur site." },
-        { q:"Comment se passe la facturation ?", a:"Missions au forfait, avec un devis détaillé après l'appel découverte. Paiement en 2 ou 3 fois selon la durée (lancement / mi-parcours / livraison). Support récurrent facturable au mois." },
-        { q:"Que se passe-t-il après la mise en production ?", a:"Un suivi 30 / 60 / 90 jours est inclus sur chaque mission : ajustements, formation complémentaire, corrections. Au-delà, un forfait de support mensuel est disponible pour les équipes qui veulent garder un expert sous la main." },
-        { q:"Pouvez-vous reprendre un déploiement Zoho existant ?", a:"Oui. J'audite l'existant, identifie ce qui fonctionne, ce qui mérite d'être retravaillé, et propose un plan d'évolution chiffré. Inutile de tout refaire si ce n'est pas nécessaire." }
+        { q:"Comment se passe la facturation ?", a:"En régie : facturation à la journée ou au mois selon ce qu'on a défini ensemble. En forfait : devis détaillé après l'appel découverte, paiement en 2 ou 3 fois. Dans tous les cas, pas de surprise — tout est transparent dès le départ." },
+        { q:"Pouvez-vous reprendre un déploiement Zoho existant ?", a:"Oui. J'audite l'existant, identifie ce qui fonctionne, ce qui mérite d'être retravaillé, et propose un plan d'évolution chiffré. Inutile de tout refaire si ce n'est pas nécessaire." },
+        { q:"Pourquoi choisir un freelance plutôt qu'une agence ?", a:"Interlocuteur unique du diagnostic à la mise en production, sans surcoût de structure. Vous parlez directement à l'expert qui configure votre système. Plus de réactivité, plus de flexibilité — et un partenaire qui s'engage sur les résultats, pas sur un cahier des charges figé." }
+      ]
+    },
+    ai: {
+      eyebrow: "IA & Automatisation",
+      h2: "L'intelligence artificielle, concrètement.",
+      sub: "Zoho intègre des fonctionnalités IA natives (Zoho Zia) qui vont au-delà de l'automatisation classique — analyse prédictive, scoring automatique, recommandations en temps réel. Une IA orientée résultats business, pas du marketing.",
+      zia: {
+        badge: "Zoho Zia · IA native",
+        t: "Votre assistant IA intégré",
+        p: "Zia analyse vos données CRM en continu pour vous donner de la visibilité là où vous n'aviez que du bruit. Insights prédictifs, détection d'anomalies, recommandations contextuelles — directement dans votre interface Zoho.",
+        chips: ["Insights prédictifs", "Détection d'anomalies", "Recommandations temps réel", "Analyse comportementale", "Alertes intelligentes"]
+      },
+      examplesLabel: "Exemples concrets",
+      examples: [
+        "Priorisation automatique des leads chauds : concentrez votre énergie sur les 20% qui convertissent",
+        "Détection de problèmes de performance commerciale avant qu'ils impactent votre chiffre d'affaires",
+        "Optimisation des relances : bon moment, bon canal, selon le comportement réel du prospect"
+      ],
+      feats: [
+        { t:"Scoring automatique", p:"Zia évalue la probabilité de conversion de chaque lead en fonction de son comportement et profil — pour prioriser sans effort.", ic:"score" },
+        { t:"Prévisions commerciales", p:"Forecasts automatiques sur votre pipeline : revenus prévisionnels, tendances, écarts objectifs. Décisions basées sur des données.", ic:"forecast" },
+        { t:"Suggestions de workflows", p:"Zia identifie les tâches répétitives dans vos process et suggère des automatisations ciblées pour gagner en efficacité.", ic:"flow" },
+        { t:"Analyse des e-mails", p:"Sentiment analysis sur les échanges clients, détection des sujets prioritaires. Un CRM qui comprend le contexte de vos conversations.", ic:"mail" }
       ]
     },
     ctaFinal: {
@@ -1097,7 +1186,7 @@ const I18N = {
   },
 
   en: {
-    nav: { services:"Services", process:"Process", stack:"Stack", work:"Work", pricing:"Packages", faq:"FAQ", cta:"Book a call" },
+    nav: { services:"Services", process:"Process", stack:"Stack", ai:"AI & Zoho", work:"Work", pricing:"Collaboration", faq:"FAQ", cta:"Book a call" },
     hero: {
       eyebrow: "Zoho One Freelancer · Based in France",
       posture: { a:"Zoho One freelancer", b:"to structure, automate", c:"and harden your back-office." },
@@ -1391,40 +1480,64 @@ const I18N = {
       ]
     },
     pricing: {
-      eyebrow: "Package",
-      h2: "One package. Everything I do.",
-      sub: "Custom quote after the discovery call — each engagement is scoped to your context and complexity.",
+      eyebrow: "Collaboration",
+      h2: "Two ways to work together.",
+      sub: "I adapt to your context — defined project or ongoing collaboration. Flexibility is at the core of every engagement.",
       tjm: "€550",
       tjmUnit: "/ day excl. VAT",
-      tjmNote: "Daily rate · fixed-price quotes scoped after the discovery call",
+      tjmNote: "Daily rate · custom quote after discovery call",
       priceLabel: "Quoted after the discovery call",
-      items: [
+      modes: [
         {
-          t:"What I do",
-          sub:"From initial audit to team training — everything a successful Zoho deployment requires.",
-          feats:[
-            "Zoho audit & diagnostic (existing setup or from scratch)",
-            "Zoho CRM implementation — pipelines, stages, fields, roles",
-            "Data import & cleanup from existing sources",
-            "Full Zoho One deployment (45+ interconnected apps)",
-            "Cross-app integrations (CRM, Books, Forms, Sign, Campaigns…)",
-            "Zoho Flow automations, Blueprints & Deluge scripts",
-            "Third-party integrations (Stripe, Twilio, Google, Calendly, Jira…)",
-            "Zoho Books — automated billing & financial management",
-            "Zoho Campaigns — marketing automation & email",
-            "Zoho Analytics — KPI dashboards & reporting",
-            "Zoho Sign — e-signature & contract management",
-            "Zoho WorkDrive — document management & sharing",
-            "Zoho Forms — lead capture & qualification",
-            "Admin & user training by role",
-            "Living documentation & operational guides",
-            "30 / 60 / 90-day post-launch follow-up included",
-            "Monthly retained support (optional)",
-            "Takeover & optimization of existing deployments"
-          ],
-          cta:"Book a discovery call"
+          featured: true,
+          tag: "★ Primary model",
+          t: "Time & Materials",
+          sub: "Most of my engagements run in iterative mode. You get full flexibility: we move at the project's pace, adjust along the way, and build a long-term relationship if needed.",
+          points: [
+            "Billed per day or per month",
+            "Real-time adjustments based on priorities",
+            "Ideal for evolving, iterative projects",
+            "Continuous post-launch optimizations",
+            "Long-term collaboration with a single point of contact"
+          ]
+        },
+        {
+          featured: false,
+          tag: "Defined scope",
+          t: "Fixed-price",
+          sub: "For well-defined engagements: initial CRM setup, audit, or a specific mission. Clear quote, scoped delivery, payment in 2 or 3 installments.",
+          points: [
+            "Detailed quote after discovery call",
+            "Scope, deliverables and timeline defined upfront",
+            "Example: CRM implementation from scratch",
+            "Example: audit & evolution plan for existing deployment",
+            "Payment in 2 or 3 installments"
+          ]
         }
-      ]
+      ],
+      featsLabel: "What I can do",
+      featsSub: "From initial audit to team training — everything a successful Zoho deployment requires.",
+      feats: [
+        "Zoho audit & diagnostic (existing setup or from scratch)",
+        "Zoho CRM implementation — pipelines, stages, fields, roles",
+        "Data import & cleanup from existing sources",
+        "Full Zoho One deployment (45+ interconnected apps)",
+        "Cross-app integrations (CRM, Books, Forms, Sign, Campaigns…)",
+        "Zoho Flow automations, Blueprints & Deluge scripts",
+        "Third-party integrations (Stripe, Twilio, Google, Calendly, Jira…)",
+        "Zoho Books — automated billing & financial management",
+        "Zoho Campaigns — marketing automation & email",
+        "Zoho Analytics — KPI dashboards & reporting",
+        "Zoho Sign — e-signature & contract management",
+        "Zoho WorkDrive — document management & sharing",
+        "Zoho Forms — lead capture & qualification",
+        "Admin & user training by role",
+        "Living documentation & operational guides",
+        "Monthly retained support (optional)",
+        "Takeover & optimization of existing deployments",
+        "Zoho Zia AI integration — lead scoring, forecasting, automations"
+      ],
+      cta: "Book a discovery call"
     },
     quotes: {
       eyebrow: "Testimonials",
@@ -1448,12 +1561,38 @@ const I18N = {
       eyebrow: "FAQ",
       h2: "The questions that come up most.",
       items: [
-        { q:"How long does a Zoho One deployment take?", a:"Between 3 and 8 weeks depending on scope. A CRM-only rollout fits in 2–3 weeks; a full suite with automations and migrations takes 6–10. Each step is planned and validated with you." },
+        { q:"How long does a project last?", a:"It depends on the scope, the business needs and the level of customization. Some projects last a few weeks — others become ongoing collaborations over several months. I adapt to your pace and priorities." },
+        { q:"Do you work exclusively on fixed-price contracts?", a:"No. Most of my engagements run in iterative mode (time & materials). Fixed-price exists for well-defined scopes, but it's not the default model. We figure out together what fits best." },
+        { q:"Can we start small and expand later?", a:"Absolutely. We can kick off with a limited scope — a single CRM pipeline or a key automation — and expand progressively based on results and evolving needs." },
         { q:"Do I need a Zoho One license already?", a:"No. I help you pick the right offer (Zoho One, CRM Plus, à-la-carte apps) based on your size and actual needs — before any license commitment." },
-        { q:"Do you only work in France?", a:"I work with French-speaking clients — France, Switzerland, Belgium, Luxembourg, Canada. Engagements are run remotely, with video checkpoints and, if needed, a few days on site." },
-        { q:"How does billing work?", a:"Fixed-price engagements, with a detailed quote after the discovery call. Payment in 2 or 3 installments (kickoff / mid / delivery). Retained support billed monthly." },
-        { q:"What happens after go-live?", a:"A 30 / 60 / 90-day follow-up is included on every engagement: tweaks, extra training, fixes. Beyond that, a monthly retainer is available for teams that want an expert on call." },
-        { q:"Can you take over an existing Zoho deployment?", a:"Yes. I audit what's there, flag what works and what needs rework, and propose a costed evolution plan. No need to rebuild from scratch if it isn't necessary." }
+        { q:"How long does a Zoho One deployment take?", a:"A CRM-only rollout typically fits in 2–3 weeks. A full suite with automations and migrations takes 6–10 weeks. The actual timeline depends on the complexity of your business processes and your team's availability." },
+        { q:"Do you only work in France?", a:"I work with French-speaking clients — France, Switzerland, Belgium, Luxembourg, Canada. Engagements are fully remote, with video checkpoints and, if needed, a few days on site." },
+        { q:"How does billing work?", a:"Time & materials: billed per day or per month as agreed. Fixed-price: detailed quote after the discovery call, payment in 2–3 installments. Either way, no surprises — everything is transparent from the start." },
+        { q:"Can you take over an existing Zoho deployment?", a:"Yes. I audit what's there, flag what works and what needs rework, and propose a costed evolution plan. No need to rebuild from scratch if it isn't necessary." },
+        { q:"Why a freelancer rather than an agency?", a:"Single point of contact from diagnosis to go-live, no agency overhead. You speak directly to the expert configuring your system. More responsiveness, more flexibility — and a partner committed to results, not a rigid spec sheet." }
+      ]
+    },
+    ai: {
+      eyebrow: "AI & Automation",
+      h2: "Artificial intelligence, practically.",
+      sub: "Zoho has native AI features (Zoho Zia) that go beyond classic automation — predictive analysis, automatic scoring, real-time recommendations. Concrete, business-oriented AI — not marketing fluff.",
+      zia: {
+        badge: "Zoho Zia · Native AI",
+        t: "Your built-in AI assistant",
+        p: "Zia continuously analyses your CRM data to give you visibility where you previously only had noise. Predictive insights, anomaly detection, contextual recommendations — directly inside your Zoho interface.",
+        chips: ["Predictive insights", "Anomaly detection", "Real-time recommendations", "Behavioural analysis", "Smart alerts"]
+      },
+      examplesLabel: "Concrete examples",
+      examples: [
+        "Automatic hot lead prioritisation: focus your energy on the 20% that convert",
+        "Early detection of commercial performance issues before they impact revenue",
+        "Follow-up optimisation: right time, right channel, based on actual prospect behaviour"
+      ],
+      feats: [
+        { t:"Lead scoring", p:"Zia automatically evaluates each lead's conversion probability based on behaviour and profile — to prioritise without effort.", ic:"score" },
+        { t:"Sales forecasting", p:"Automatic pipeline forecasts: projected revenue, trends, target gaps. Decisions backed by data, not gut feeling.", ic:"forecast" },
+        { t:"Workflow suggestions", p:"Zia identifies repetitive tasks in your processes and suggests targeted automations for better operational efficiency.", ic:"flow" },
+        { t:"Email analysis", p:"Sentiment analysis on client exchanges, priority topic detection. A CRM that understands the context of your conversations.", ic:"mail" }
       ]
     },
     ctaFinal: {
@@ -1509,6 +1648,7 @@ function Nav({lang, setLang, t}){
           <li><a className="nav-link" href="#services">{t.nav.services}</a></li>
           <li><a className="nav-link" href="#process">{t.nav.process}</a></li>
           <li><a className="nav-link" href="#stack">{t.nav.stack}</a></li>
+          <li><a className="nav-link" href="#ai">{t.nav.ai}</a></li>
           <li><a className="nav-link" href="#work">{t.nav.work}</a></li>
           <li><a className="nav-link" href="#pricing">{t.nav.pricing}</a></li>
           <li><a className="nav-link" href="#faq">{t.nav.faq}</a></li>
@@ -1941,20 +2081,83 @@ function Pricing({t}){
           </div>
           <p className="tjm-note">{t.pricing.tjmNote}</p>
         </div>
-        <div className="pkg-grid">
-          {t.pricing.items.map((p,i)=>(
-            <div className="pkg reveal d1" key={i}>
-              <div>
-                <h3>{p.t}</h3>
-                <p className="pkg-sub">{p.sub}</p>
-              </div>
+        <div className="modes-grid reveal d1">
+          {t.pricing.modes.map((m,i)=>(
+            <div key={i} className={`mode-card${m.featured?' featured':''}`}>
+              <div className="mode-tag">{m.tag}</div>
+              <h4>{m.t}</h4>
+              <p className="mode-desc">{m.sub}</p>
               <ul>
-                {p.feats.map((f,fi)=>(<li key={fi}><Icon.check/> {f}</li>))}
+                {m.points.map((pt,pi)=>(<li key={pi}><Icon.check/> {pt}</li>))}
               </ul>
-              <div className="pkg-price">{t.pricing.priceLabel}</div>
-              <a href={CALENDLY} target="_blank" rel="noopener" className="btn btn-primary">{p.cta} <Icon.arrow/></a>
             </div>
           ))}
+        </div>
+        <div className="pkg reveal d2">
+          <div>
+            <h3>{t.pricing.featsLabel}</h3>
+            <p className="pkg-sub">{t.pricing.featsSub}</p>
+          </div>
+          <ul>
+            {t.pricing.feats.map((f,fi)=>(<li key={fi}><Icon.check/> {f}</li>))}
+          </ul>
+          <div className="pkg-price">{t.pricing.priceLabel}</div>
+          <a href={CALENDLY} target="_blank" rel="noopener noreferrer" className="btn btn-primary">{t.pricing.cta} <Icon.arrow/></a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function AISection({t}){
+  const AIIcons = {
+    score:   (p)=><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...p}><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>,
+    forecast:(p)=><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...p}><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>,
+    flow:    (p)=><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...p}><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.5 6H18M6 8.5V18M8.5 18h7.5M18 8.5V18" strokeDasharray="2 3"/></svg>,
+    mail:    (p)=><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...p}><path d="M4 4h16c1.1 0 2 .9 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>,
+  };
+  return (
+    <section id="ai" aria-label="IA et automatisation Zoho">
+      <div className="container">
+        <div className="section-head">
+          <div>
+            <div className="eyebrow reveal"><span className="dot"/>{t.ai.eyebrow}</div>
+            <h2 className="reveal d1" style={{marginTop:14}}>{t.ai.h2}</h2>
+          </div>
+          <p className="reveal d2" style={{maxWidth:460}}>{t.ai.sub}</p>
+        </div>
+        <div className="ai-top reveal d1">
+          <div className="ai-zia">
+            <div className="ai-zia-badge"><span className="dot-ai"/>{t.ai.zia.badge}</div>
+            <h4>{t.ai.zia.t}</h4>
+            <p>{t.ai.zia.p}</p>
+            <div className="ai-chips">
+              {t.ai.zia.chips.map((c,i)=>(<span key={i} className="ai-chip">{c}</span>))}
+            </div>
+          </div>
+          <div className="ai-examples">
+            <div className="ex-label">{t.ai.examplesLabel}</div>
+            <ul>
+              {t.ai.examples.map((ex,i)=>(
+                <li key={i}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  {ex}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="ai-feats">
+          {t.ai.feats.map((f,i)=>{
+            const IcFn = AIIcons[f.ic] || Icon.cog;
+            return (
+              <div key={i} className="ai-feat reveal" style={{transitionDelay:`${0.05+i*0.07}s`}}>
+                <div className="feat-ic"><IcFn/></div>
+                <h5>{f.t}</h5>
+                <p>{f.p}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -2091,6 +2294,7 @@ function App(){
       <Process t={t}/>
       <Stack t={t}/>
       <ToolsExtra t={t}/>
+      <AISection t={t}/>
       <Work t={t}/>
       <Pricing t={t}/>
       <Quotes t={t}/>
