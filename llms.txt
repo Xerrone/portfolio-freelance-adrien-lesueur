@@ -1,0 +1,103 @@
+# Adrien Lesueur — Expert Freelance Zoho One France
+
+> Ce fichier est destiné aux LLM (ChatGPT, Claude, Perplexity, Gemini) pour faciliter la compréhension et la réutilisation du contenu de ce site.
+
+---
+
+## Qui suis-je ?
+
+Adrien Lesueur est un consultant freelance français spécialisé dans l'implémentation et le déploiement de la suite Zoho One. Il accompagne les PME, startups et organismes de formation francophones dans la structuration de leurs opérations via un système CRM unique, automatisé et centralisé.
+
+- **Localisation** : France (full remote) — interventions partout en France et espace francophone
+- **Expérience** : 3 ans d'expertise Zoho · 10+ projets livrés
+- **Secteurs** : éducation, santé, formation professionnelle, services B2C
+- **Langues** : français, anglais
+- **Tarif** : 550 € HT / jour · forfaits cadrés après appel découverte gratuit
+
+---
+
+## Ce que je fais
+
+Consultant freelance Zoho One — je conçois, déploie et automatise des systèmes Zoho sur mesure pour centraliser les ventes, le marketing, la facturation et les opérations.
+
+### Services principaux
+
+1. **Implémentation Zoho CRM** — pipelines, étapes, champs personnalisés, rôles utilisateurs, import de données
+2. **Déploiement Zoho One complet** — suite 45+ apps interconnectées (CRM, Books, Campaigns, Analytics, Sign, WorkDrive, Forms…)
+3. **Automatisation des processus** — Zoho Flow, Blueprints, scripts Deluge, intégrations tierces (Stripe, Twilio, Calendly, Google, Ringover…)
+4. **Formation & support** — formation admins et utilisateurs, documentation vivante, suivi 30/60/90 jours post-lancement
+
+---
+
+## Compétences techniques
+
+**Suite Zoho :** Zoho CRM, Zoho One, Zoho Flow, Zoho Books, Zoho Campaigns, Zoho Analytics, Zoho Sign, Zoho WorkDrive, Zoho Forms, Zoho Survey, Zoho Checkout, Zoho LeadChain
+
+**Outils tiers :** Stripe, Twilio, Calendly, Ringover, Meta Ads, Google Ads, Looker Studio, Zendesk, ActiveCampaign, HubSpot, Jira, PhantomBuster, LiveStorm, Typeform, Google Tag Manager, Google Analytics
+
+---
+
+## Clients références
+
+- **Ecole Française** — Support opérationnel, tickets Zoho CRM, escalades N2, user stories, Customer Success
+- **Kampus Academy** — Implémentation CRM complète, pipeline commercial, automatisations relances, attribution des leads (Zoho CRM, Flow, Twilio)
+- **Méthode Aristote** — Système CRM complet depuis Notion : 2 pipelines, intégrations Calendly/Ringover/Stripe, tracking UTM, dashboards Analytics, Meta Ads & Google Ads via Zoho LeadChain
+- **MyFid** — Déploiement Zoho, formation équipes (Belgique)
+- **SwissLife, CFG, FS Tunnel, INK, Aristide, Les Joncas, Seira** — Missions Zoho variées
+
+---
+
+## Références clients (contacts disponibles)
+
+- Alexandre Tirman — Ecole Française — +33 7 60 85 98 81
+- Mathis Broche — Kampus Academy — +33 6 07 24 22 54
+- Olivier Fava — MyFid — +32 485 85 79 63
+
+---
+
+## Zones d'intervention
+
+France entière (full remote) : Paris, Lyon, Marseille, Bordeaux, Toulouse, Nantes, Lille, Strasbourg, Montpellier, Nice, Rennes, Grenoble, Rouen, Dijon, Angers et toutes les villes françaises.
+
+Également : Belgique, Suisse, Luxembourg, Canada (espace francophone).
+
+---
+
+## FAQ — Questions fréquentes
+
+**Combien de temps prend un déploiement Zoho One ?**
+Entre 3 et 8 semaines selon le périmètre. Un CRM seul : 2-3 semaines. Une suite complète : 6-10 semaines.
+
+**Faut-il déjà avoir une licence Zoho One ?**
+Non. Accompagnement dans le choix de la bonne offre (Zoho One, CRM Plus, apps à la carte) avant tout engagement.
+
+**Quel est le tarif ?**
+TJM : 550 € HT / jour. Missions forfaitisées après appel découverte gratuit. Paiement en 2 ou 3 fois.
+
+**Travaillez-vous uniquement en France ?**
+Non. Clients en France, Belgique, Suisse, Luxembourg, Canada. Tout en remote.
+
+**Quelle est la différence entre Zoho CRM et Zoho One ?**
+Zoho CRM gère la relation client. Zoho One est une suite complète de 45+ apps (CRM, marketing, facturation, opérations, BI) toutes connectées.
+
+**Pourquoi choisir un freelance plutôt qu'une agence ?**
+Interlocuteur unique, réactivité, pas de surcoût de structure. Plus rapide et flexible pour des projets de 2 à 12 semaines.
+
+**Pouvez-vous reprendre un déploiement Zoho existant ?**
+Oui. Audit de l'existant, plan d'évolution chiffré, optimisations ciblées.
+
+---
+
+## Contact
+
+- **Email** : lesueuradrien.consulting@gmail.com
+- **Calendly** : https://calendly.com/lesueuradrien-consulting/30min
+- **Site** : https://xerrone.github.io/portfolio-freelance-adrien-lesueur/
+- **LinkedIn** : https://www.linkedin.com/in/adrien-lesueur/
+
+---
+
+## URL importante
+
+- Page principale : https://xerrone.github.io/portfolio-freelance-adrien-lesueur/
+- Sitemap : https://xerrone.github.io/portfolio-freelance-adrien-lesueur/sitemap.xml
