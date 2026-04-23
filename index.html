@@ -1136,6 +1136,7 @@ var I18N = {
         company: "Ecole Française",
         headline: "Customer Success & Support opérationnel",
         status: "Mission de référence",
+        period: "2023 · 2025–2026",
         context: "Une entreprise d'éducation en ligne en forte croissance avait besoin d'un appui opérationnel sur ses outils internes, notamment Zoho CRM. Des remontées de problèmes et anomalies sur plusieurs plateformes nécessitaient un interlocuteur capable de les traiter, de coordonner avec la tech et de formaliser les besoins produit.",
         problems: ["Remontées de bugs et anomalies sur les outils internes (Zoho CRM, Zendesk, plateformes)", "Pas d'interlocuteur dédié pour traiter les tickets opérationnels", "Sujets N2 non coordonnés avec l'équipe technique", "Besoins produit non formalisés, sans user stories structurées", "Workflows manuels et processus peu documentés"],
         objectives: ["Traiter les remontées de problèmes sur les outils internes", "Assurer la coordination N2 avec l'équipe tech", "Formaliser les besoins en user stories exploitables", "Améliorer les opérations Customer Success", "Optimiser les workflows et process internes"],
@@ -1147,6 +1148,7 @@ var I18N = {
         company: "Kampus Academy",
         headline: "Implémentation CRM & Structuration du processus commercial",
         status: "Mission documentée",
+        period: "2025–2026",
         context: "Kampus Academy, organisme de formation pour les professionnels de santé, ne disposait ni de CRM ni de système commercial structuré. L'équipe s'appuyait principalement sur une plateforme pédagogique, sans outils dédiés pour gérer les prospects ou assurer le suivi des clients existants.",
         problems: ["Aucun CRM ni pipeline commercial", "Pas de suivi structuré des clients existants", "Difficultés à gérer les obligations annuelles récurrentes (renouvellements de formations obligatoires)", "Aucune automatisation pour les relances et la prospection", "Zéro visibilité sur l'activité commerciale"],
         objectives: ["Construire un CRM et un pipeline commercial complets", "Structurer la segmentation clients / prospects", "Automatiser les relances (e-mail & SMS)", "Améliorer l'organisation de l'équipe commerciale et la répartition de charge"],
@@ -1158,6 +1160,7 @@ var I18N = {
         company: "Méthode Aristote",
         headline: "Implémentation CRM & Structuration du système commercial",
         status: "Mission documentée",
+        period: "2025–2026",
         context: "Méthode Aristote, organisme d'accompagnement et de formation, utilisait Notion pour gérer ses prospects et clients — sans CRM ni processus commercial structuré. L'objectif : construire un système complet pour piloter l'acquisition, le suivi commercial, les abonnements et la performance.",
         problems: ["Absence de CRM structuré (gestion via Notion)", "Aucun pipeline commercial clair", "Difficulté à qualifier les prospects", "Manque de visibilité sur l'acquisition et les performances", "Processus manuels et dispersés"],
         objectives: ["Construire une architecture CRM complète sur Zoho", "Structurer l'ensemble du funnel (prospects → opportunités → clients)", "Intégrer les canaux d'acquisition et le tracking UTM", "Automatiser les processus commerciaux", "Centraliser toutes les interactions (appels, rendez-vous, campagnes)", "Mettre en place des dashboards de performance"],
@@ -1169,6 +1172,7 @@ var I18N = {
         company: "SEIRA Formation",
         headline: "Migration CRM Sellsy → Zoho & Structuration des processus",
         status: "Mission documentée",
+        period: "2024",
         context: "SEIRA utilisait le CRM Sellsy et souhaitait migrer vers Zoho pour améliorer la gestion clients et structurer ses processus internes. L'enjeu : une migration complète sans perte de données, tout en assurant la continuité des opérations.",
         problems: [
           "Migration de données critique entre deux CRM hétérogènes",
@@ -1675,6 +1679,7 @@ var I18N = {
         company: "SEIRA Formation",
         headline: "CRM Migration Sellsy → Zoho & Process Structuring",
         status: "Documented project",
+        period: "2024",
         context: "SEIRA was using Sellsy CRM and wanted to migrate to Zoho to improve client management and structure their internal processes. The challenge: a complete migration with zero data loss while maintaining operational continuity.",
         problems: [
           "Critical data migration between two heterogeneous CRM systems",
@@ -2630,7 +2635,7 @@ function Work(_ref0) {
       className: "flab ind"
     }, f.industry), /*#__PURE__*/React.createElement("span", {
       className: "flab stat"
-    }, f.status))), /*#__PURE__*/React.createElement("h2", null, f.headline), /*#__PURE__*/React.createElement("div", {
+    }, f.status), f.period && /*#__PURE__*/React.createElement("span", { className: "flab stat", style: {background:"rgba(14,165,233,0.08)", color:"#0ea5e9", border:"1px solid rgba(14,165,233,0.25)"} }, "📅 ", f.period))), /*#__PURE__*/React.createElement("h2", null, f.headline), /*#__PURE__*/React.createElement("div", {
       className: "company"
     }, f.company), /*#__PURE__*/React.createElement("p", {
       className: "context"
