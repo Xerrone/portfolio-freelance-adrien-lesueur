@@ -1019,7 +1019,8 @@ var I18N = {
         t: "Formation & suivi",
         d: "Formations par rôle, documentation, accompagnement à la prise en main.",
         meta: "30 / 60 / 90 jours"
-      }]
+      }],
+      note: "⚠️ Les durées indiquées sont des estimations. Le rythme réel dépend aussi fortement de la disponibilité du client — réactivité sur les validations, accès aux données, implication des équipes. Plus le client est disponible, plus la mission avance vite."
     },
     toolsExtra: {
       eyebrow: "Ma valeur ajoutée",
@@ -1529,7 +1530,8 @@ var I18N = {
         t: "Training & follow-up",
         d: "Role-based training, documentation, hand-holding on day-to-day use.",
         meta: "30 / 60 / 90 days"
-      }]
+      }],
+      note: "⚠️ Timelines shown are estimates. Actual pace depends heavily on client availability — responsiveness on approvals, data access, and team involvement. The more engaged the client, the faster the project moves."
     },
     toolsExtra: {
       eyebrow: "Added value",
@@ -2507,7 +2509,10 @@ function Process(_ref7) {
     }, s.n), /*#__PURE__*/React.createElement("h4", null, s.t), /*#__PURE__*/React.createElement("p", null, s.d), /*#__PURE__*/React.createElement("div", {
       className: "meta"
     }, s.meta));
-  }))));
+  })), t.process.note && /*#__PURE__*/React.createElement("div", {
+    className: "proc-note reveal",
+    style: {marginTop:"20px", padding:"14px 18px", background:"#fffbeb", border:"1px solid #fcd34d", borderRadius:"12px", fontSize:"14px", color:"#92400e", lineHeight:"1.6", display:"flex", gap:"10px", alignItems:"flex-start"}
+  }, t.process.note)));
 }
 function Stack(_ref8) {
   var t = _ref8.t;
