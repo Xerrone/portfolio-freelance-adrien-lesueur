@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://xerrone.github.io/portfolio-freelance-adrien-lesueur/sitemap.txt
+Sitemap: https://xerrone.github.io/portfolio-freelance-adrien-lesueur/sitemap.xml
