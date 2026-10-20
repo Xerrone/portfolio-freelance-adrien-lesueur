@@ -43,6 +43,7 @@ Consultant freelance Zoho One — je conçois, déploie et automatise des systè
 - **Kampus Academy** — Implémentation CRM complète, pipeline commercial, automatisations relances, attribution des leads (Zoho CRM, Flow, Twilio)
 - **Méthode Aristote** — Système CRM complet depuis Notion : 2 pipelines, intégrations Calendly/Ringover/Stripe, tracking UTM, dashboards Analytics, Meta Ads & Google Ads via Zoho LeadChain
 - **MyFid** — Déploiement Zoho, formation équipes (Belgique)
+- **Établissements Renard** — Refonte CRM d'un bureau d'études foudre (mission en cours) : modèle Affaires / Devis / Commandes / Contrats, contrats récurrents, WorkDrive (Zoho CRM, Writer, WorkDrive)
 - **SwissLife, CFG, FS Tunnel, INK, Aristide, Les Joncas, Seira** — Missions Zoho variées
 
 ---
